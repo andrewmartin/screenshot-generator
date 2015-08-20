@@ -23,10 +23,10 @@ html.no-js
                   label(for="query") Url
                   each url in urls
                     .input-group
-                      input(type="text", value!=url, name="urls[]", placeholder="Enter a URL").input-lg.form-control
+                      input(type="text", value!=url, name="urls[]", placeholder="Enter a URL, excluding http://www.").input-lg.form-control
                       span.input-group-addon.add Add
                   .input-group
-                    input(type="text", value!=url, name="urls[]", placeholder="Enter a URL").input-lg.form-control
+                    input(type="text", value!=url, name="urls[]", placeholder="Enter a URL, excluding http://www.").input-lg.form-control
                     span.input-group-addon.add Add
                 .form-group
                   label(for="size") width

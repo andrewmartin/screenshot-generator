@@ -37,7 +37,7 @@ var parseURLS = function(urls, width, height) {
         height: height
       }
     }
-    console.log('getting screen', url, name, key, options);
+    // console.log('getting screen', url, name, key, options);
     webshot('http://' + url, fileName, options, function() {
       files.push(fileName.replace('.', ''));
       if (key === (files.length - 1)) {
