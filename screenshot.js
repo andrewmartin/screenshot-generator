@@ -40,9 +40,7 @@ var parseURLS = function(urls, width, height) {
     console.log('getting screen', url, name, key, options);
     webshot('http://' + url, fileName, options, function() {
       files.push(fileName.replace('.', ''));
-      console.log('files', files, files.length);
       if (key === (files.length - 1)) {
-        console.log('resolving');
         deferred.resolve(files);
       }
     });
@@ -56,8 +54,6 @@ router.get('/grab', function(req,res) {
 });
 
 router.post('/grab', function(req, res, next) {
-  console.log('next', req.body);
-
   var query = req.query;
   var width = req.body.width || 1024;
   var height = req.body.height || 768;

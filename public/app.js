@@ -13,7 +13,6 @@ $(document).ready(function() {
   }
 
   var keyDownHandler = function(e) {
-    console.log('char', e.keyCode);
     if (e.keyCode == 13) {
       $('.input-group:last-child .add').trigger('click');
       $('.input-group:last-child input').focus();
