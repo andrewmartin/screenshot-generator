@@ -1,0 +1,22 @@
+{
+  "name": "screenshot-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "screenshot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.2",
+    "node-webkit-screenshot": "^0.3.1",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "lodash": "^3.10.1",
+    "node-webkit-screenshot": "^0.3.1",
+    "q": "^1.4.1",
+    "webshot": "^0.16.0"
+  }
+}
